@@ -1,0 +1,169 @@
+/* ================================
+   Formulário Psicólogo
+================================== */
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: #fefefe;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(43, 124, 255, 0.15);
+  border: 1px solid #cddbf8;
+}
+
+.cadastro-inicial {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-cadastro label {
+  font-weight: 600;
+  color: #2b7cff;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.form-cadastro input[type="text"],
+.form-cadastro input[type="url"],
+.form-cadastro textarea {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+  width: 100%;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-cadastro input[type="text"]:focus,
+.form-cadastro input[type="url"]:focus,
+.form-cadastro textarea:focus {
+  border-color: #2b7cff;
+  outline: none;
+}
+
+.form-cadastro textarea {
+  min-height: 100px;
+}
+
+.form-cadastro button[type="submit"] {
+  background-color: #2b7cff;
+  color: white;
+  padding: 0.85rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.6rem;
+}
+
+.form-cadastro button[type="submit"]:hover {
+  background-color: #1a4fcc;
+}
+
+@media (min-width: 600px) {
+  .cadastro-inicial {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .cadastro-inicial label,
+  .cadastro-inicial input {
+    flex: 1;
+  }
+}
+
+/* ================================
+   App.js - Lista e Botões
+================================== */
+.app-container {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.titulo-principal {
+  font-size: 2rem;
+  color: #2b7cff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.lista-psicologos {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.item-psicologo {
+  background: #f7f9ff;
+  border: 1px solid #cddbf8;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-psicologo strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.item-psicologo button {
+  padding: 0.5rem 0.8rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2b7cff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.item-psicologo button:hover {
+  background-color: #1a4fcc;
+}
+
+.botao-voltar {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #ccc;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-voltar:hover {
+  background-color: #999;
+}
+
+/* ================================
+   Consultas Agendadas
+================================== */
+.consultas-agendadas {
+  margin-top: 1.5rem;
+}
+
+.consultas-agendadas h3 {
+  color: #2b7cff;
+  margin-bottom: 0.8rem;
+}
+
+.consultas-agendadas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.consultas-agendadas li {
+  background: #eef3ff;
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
